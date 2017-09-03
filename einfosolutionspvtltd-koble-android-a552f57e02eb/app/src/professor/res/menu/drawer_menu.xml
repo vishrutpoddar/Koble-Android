@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/schedule"
+            android:icon="@drawable/schedule"
+            android:title="Schedule" />
+
+        <item
+            android:id="@+id/classes"
+            android:icon="@drawable/classes"
+            android:title="Classes" />
+
+        <item
+            android:id="@+id/appointments"
+            android:icon="@drawable/appointments"
+            android:title="Appointments" />
+
+        <item
+            android:id="@+id/office_hours"
+            android:icon="@drawable/office_hours"
+            android:title="Office Hours" />
+
+        <item
+            android:id="@+id/chats"
+            android:icon="@drawable/chats"
+            android:title="Chats" />
+
+        <item
+            android:id="@+id/notifications"
+            android:icon="@drawable/notifications"
+            android:title="Notifications" />
+    </group>
+
+</menu>

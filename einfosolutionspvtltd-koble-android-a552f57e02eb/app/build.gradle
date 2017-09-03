@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        sign_prof {
+            keyAlias 'kobleapp'
+            keyPassword 'kobleapp'
+            storeFile file('keystore_prof.jks')
+            storePassword 'kobleapp'
+        }
+        sign_stu {
+            keyAlias 'kobleapp'
+            keyPassword 'kobleapp'
+            storeFile file('keystore_stu.jks')
+            storePassword 'kobleapp'
+        }
+    }
+    compileSdkVersion project.ext.myCompileSdkVersion
+    buildToolsVersion project.ext.myBuildToolsVersion
+    defaultConfig {
+        minSdkVersion project.ext.myMinSdkVersion
+        renderscriptSupportModeEnabled true
+        targetSdkVersion project.ext.myTargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    productFlavors {
+        student {
+            applicationId "in.einfosolutions.koble.student"
+            versionCode 10
+            versionName "1.6"
+            signingConfig signingConfigs.sign_stu
+        }
+        professor {
+            applicationId "in.einfosolutions.koble.professor"
+            versionCode 10
+            versionName "1.6"
+            signingConfig signingConfigs.sign_prof
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            jniDebuggable false
+            multiDexEnabled false
+            renderscriptDebuggable false
+            zipAlignEnabled true
+        }
+    }
+}
+
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+    maven {
+        url 'http://dl.bintray.com/amulyakhare/maven'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:' + project.ext.mySupportVersion
+    compile 'com.android.support:design:' + project.ext.mySupportVersion
+    compile 'com.android.support:support-v4:' + project.ext.mySupportVersion
+    compile 'com.android.support:recyclerview-v7:' + project.ext.mySupportVersion
+    compile 'com.android.support:cardview-v7:' + project.ext.mySupportVersion
+    //  Floating Action Menu Library
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    //   Calendar Library
+    compile 'com.prolificinteractive:material-calendarview:1.4.3'
+    // CompactCalendarView https://github.com/SundeepK/CompactCalendarView
+
+    //https://github.com/afollestad/material-dialogs
+    compile 'com.afollestad.material-dialogs:core:0.9.0.0'
+    //  Spinner Library
+    compile 'com.weiwangcn.betterspinner:library-material:1.1.0'
+    //  Network Libraries
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    //  JodaTime Library
+    compile 'net.danlew:android.joda:2.9.9'
+    // Android Week View
+    compile 'com.github.alamkanak:android-week-view:1.2.6'
+    //
+    compile 'com.github.desmond1121:ripplecompat:0.4.1'
+    //Glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //circle imageview
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    // LocalMessageManager https://github.com/inloop/LocalMessageManager
+    compile 'eu.inloop:localmessagemanager:0.1.7'
+    //ripple
+    compile 'com.balysv:material-ripple:1.0.2'
+    // Text Drawable https://github.com/amulyakhare/TextDrawable
+    compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    // MaterialBadgeTextView  https://github.com/matrixxun/MaterialBadgeTextView
+    // Firebase UI
+    compile 'com.firebaseui:firebase-ui-database:0.4.0'
+    compile 'com.google.firebase:firebase-database:10.2.0'
+    compile 'com.google.firebase:firebase-messaging:10.2.0'
+    compile 'com.google.firebase:firebase-core:10.2.0'
+    compile 'com.google.firebase:firebase-crash:10.2.0'
+    // image picker lib https://github.com/jrvansuita/PickImage
+    compile 'com.github.jrvansuita:PickImage:2.1.1'
+}
+apply plugin: 'com.google.gms.google-services'

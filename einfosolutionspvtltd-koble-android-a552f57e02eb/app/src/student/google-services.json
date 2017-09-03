@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1023787718194",
+    "firebase_url": "https://koble-ebde0.firebaseio.com",
+    "project_id": "koble-ebde0",
+    "storage_bucket": "koble-ebde0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023787718194:android:4308bd58198984e9",
+        "android_client_info": {
+          "package_name": "in.einfosolutions.koble.professor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXdVf1UaqiVV3njyu_ycGro30Bu6YiW-0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023787718194:android:69c5fde4b7735ead",
+        "android_client_info": {
+          "package_name": "in.einfosolutions.koble.student"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXdVf1UaqiVV3njyu_ycGro30Bu6YiW-0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

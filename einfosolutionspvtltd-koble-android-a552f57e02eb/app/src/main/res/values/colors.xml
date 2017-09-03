@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#45C9F5</color>
+    <color name="colorPrimaryDark">#1893D0</color>
+    <color name="colorAccent">#6EC7B1</color>
+    <color name="colorRed">#EF4346</color>
+
+    <color name="colorPrimaryDarkPressed">#5AAED8</color>
+    <color name="colorRedPressed">#FF474B</color>
+
+    <color name="colorAppointmentText">@color/colorPrimaryDark</color>
+    <color name="colorEventText">@color/colorRed</color>
+    <color name="colorOfficeHourText">@color/colorAccent</color>
+
+    <color name="greenOnline">#0bd318</color>
+    <color name="redOffline">#ff0000</color>
+
+    <!-- Appo Activity -->
+    <color name="headerColumnTextColor">#4e4e4e</color>
+    <color name="headerRowBackgroundColor">#EBEBEB</color>
+    <color name="todayHeaderTextColor">@color/colorPrimaryDark</color>
+    <color name="ripple_color">#82ffffff</color>
+    <color name="darkGray">#8c8c8c</color>
+    <color name="blur_overlay">#00000000</color>
+    <color name="stroke_divider_chat">#b3b3b3</color>
+    <color name="write_msg_back">#f4f4f4</color>
+    <color name="chat_back">#ffffff</color>
+
+
+</resources>
